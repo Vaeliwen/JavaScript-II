@@ -1,6 +1,22 @@
 // ==== Challenge 1: Write your own closure ====
 // Write a simple closure of your own creation.  Keep it simple!
 
+function character() {
+  let whatAmI = 'An Adventurer'
+  function race() {
+    let whatsMyRace = 'Human'
+    return `Your race is ${whatsMyRace}.`
+  }
+  function job() {
+    let whatsMyJob = 'Warrior'
+    return `Your job is ${whatsMyJob}.`
+  }
+  let whatsMyRace = 'Orc' //Doesn't display while let whatsMyRace = 'Human' is active within function race().
+  return `You are ${whatAmI}!  ${race()}  ${job()}  Happy hunting!` ;
+}
+
+console.log(character())
+
 /* STRETCH PROBLEMS, Do not attempt until you have completed all previous tasks for today's project files */
 
 
